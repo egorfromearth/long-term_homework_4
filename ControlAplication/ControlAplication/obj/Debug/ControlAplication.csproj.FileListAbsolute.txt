@@ -1,0 +1,16 @@
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\bin\Debug\ControlAplication.exe.config
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\bin\Debug\ControlAplication.exe
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\bin\Debug\ControlAplication.pdb
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\obj\Debug\ControlAplication.csprojAssemblyReference.cache
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\obj\Debug\ControlAplication.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\obj\Debug\ControlAplication.exe
+C:\Users\Александр\source\repos\ControlAplication\ControlAplication\obj\Debug\ControlAplication.pdb
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\obj\Debug\ControlAplication.csprojAssemblyReference.cache
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\obj\Debug\ControlAplication.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\obj\Debug\ControlAplication.exe
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\obj\Debug\ControlAplication.pdb
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\bin\Debug\ControlAplication.exe.config
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\bin\Debug\ControlAplication.exe
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\bin\Debug\ControlAplication.pdb
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\obj\Debug\ControlAplication.csproj.CopyComplete
+C:\Users\Александр\source\repos\DolgosrocMP\ControlAplication\ControlAplication\bin\Debug\Communication.dll

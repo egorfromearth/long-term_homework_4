@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fsoc\\.nuget\\packages\\": {},
+    "C:\\Users\\Александр\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fsoc\\Desktop\\C#\\Dolgosrok\\Agent\\Agent\\Agent.csproj",
+      "projectUniqueName": "C:\\Users\\Александр\\Documents\\GitHub\\long-term_homework_4\\Agent\\Agent\\Agent.csproj",
       "projectName": "Agent",
-      "projectPath": "C:\\Users\\fsoc\\Desktop\\C#\\Dolgosrok\\Agent\\Agent\\Agent.csproj",
-      "packagesPath": "C:\\Users\\fsoc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fsoc\\Desktop\\C#\\Dolgosrok\\Agent\\Agent\\obj\\",
+      "projectPath": "C:\\Users\\Александр\\Documents\\GitHub\\long-term_homework_4\\Agent\\Agent\\Agent.csproj",
+      "packagesPath": "C:\\Users\\Александр\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Александр\\Documents\\GitHub\\long-term_homework_4\\Agent\\Agent\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fsoc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Александр\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -1,0 +1,11 @@
+C:\Users\Александр\source\repos\Communication\Communication\bin\Debug\Communication.dll
+C:\Users\Александр\source\repos\Communication\Communication\bin\Debug\Communication.pdb
+C:\Users\Александр\source\repos\Communication\Communication\obj\Debug\Communication.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\Communication\Communication\obj\Debug\Communication.dll
+C:\Users\Александр\source\repos\Communication\Communication\obj\Debug\Communication.pdb
+C:\Users\Александр\source\repos\DolgosrocMP\Communication\Communication\bin\Debug\Communication.dll
+C:\Users\Александр\source\repos\DolgosrocMP\Communication\Communication\bin\Debug\Communication.pdb
+C:\Users\Александр\source\repos\DolgosrocMP\Communication\Communication\obj\Debug\Communication.csprojAssemblyReference.cache
+C:\Users\Александр\source\repos\DolgosrocMP\Communication\Communication\obj\Debug\Communication.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\DolgosrocMP\Communication\Communication\obj\Debug\Communication.dll
+C:\Users\Александр\source\repos\DolgosrocMP\Communication\Communication\obj\Debug\Communication.pdb
