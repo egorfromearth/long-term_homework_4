@@ -14,3 +14,12 @@ C:\Users\Александр\source\repos\DolgosrocMP\Agent\Agent\obj\Debug\Agent
 C:\Users\Александр\source\repos\DolgosrocMP\Agent\Agent\obj\Debug\Agent.exe
 C:\Users\Александр\source\repos\DolgosrocMP\Agent\Agent\obj\Debug\Agent.pdb
 C:\Users\Александр\source\repos\DolgosrocMP\Agent\Agent\bin\Debug\Communication.dll
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\obj\Debug\Agent.csprojAssemblyReference.cache
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\obj\Debug\Agent.csproj.CoreCompileInputs.cache
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\obj\Debug\Agent.exe
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\obj\Debug\Agent.pdb
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\bin\Debug\Agent.exe.config
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\bin\Debug\Agent.exe
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\bin\Debug\Agent.pdb
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\bin\Debug\Communication.dll
+C:\Users\Александр\Documents\GitHub\long-term_homework_4\Agent\Agent\obj\Debug\Agent.csproj.CopyComplete
