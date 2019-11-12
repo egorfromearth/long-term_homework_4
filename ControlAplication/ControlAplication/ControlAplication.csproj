@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Agent.cs" />
     <Compile Include="ControlAplication.cs" />
+    <Compile Include="ProcessingMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
