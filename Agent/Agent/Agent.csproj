@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Agent.cs" />
     <Compile Include="PasswordGuessing.cs" />
+    <Compile Include="ProcessingMessage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
