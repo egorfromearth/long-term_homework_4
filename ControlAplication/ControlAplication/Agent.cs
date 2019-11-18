@@ -16,18 +16,19 @@ namespace ControllAplication
 
         public int IdAgent { get => _idAgent; }
         public int IdTaskt { get => _idTask; }
-        public string QueueSend { get => _nameQueueSend; }
-        public string QueueReceive { get => _nameQueueReceive; }
+        public string QueueSendName { get => _nameQueueSend; }
+        public string QueueReceiveName { get => _nameQueueReceive; }
+        public MessageQueue QueueSend { get => _queueSend; }
+        public MessageQueue QueueReceive { get => _queueReceive; }
 
         SystemInformation Info { get => _info; }
 
-        public void WorkingAgent() {
+        public void WorkingAgent()
+        {
 
             while (true)
             {
                 ProcessingMessage.ChekMessage(_queueSend);
-                Communication.Message message = new Communication.Message(_idAgent, 0);
-                _queueReceive.Send(message);
             }
         }
 

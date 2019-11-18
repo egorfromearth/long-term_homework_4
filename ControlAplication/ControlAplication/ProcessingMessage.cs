@@ -10,6 +10,7 @@ namespace ControlAplication
 
     public class ProcessingMessage
     {
+        private static List<Task> tasksList = new List<Task>();
         public static List<Agent> agentsList = new List<Agent>();
         public static List<string> quereList = new List<string>();
         public static Dictionary<Agent, Thread> dictionaryThread = new Dictionary<Agent, Thread>();
@@ -36,7 +37,7 @@ namespace ControlAplication
         {
             try
             {
-                Console.WriteLine("ControllAplication idSender:"+ message.IdSender + " idIdRecepient:" + message.IdRecepient);
+                Console.WriteLine("ControllAplication idSender:" + message.IdSender + " idIdRecepient:" + message.IdRecepient);
             }
             catch (Exception e)
             {
@@ -52,29 +53,29 @@ namespace ControlAplication
         /// </summary>
         /// <param name="quere">очередь откуда пришло сообщение</param>
         /// <param name="message">приянтое сообщение</param>
-        public static bool ProcessingHalloMessage(MessageQueue quere, HalloMessage message) 
+        public static bool ProcessingHalloMessage(MessageQueue quere, HalloMessage message)
         {
             try
             {
                 Agent agent = new Agent(_nextIdAgent, -1, message.info, @".\private$\secondSend" + _nextIdAgent.ToString(), @".\private$\secondRecive" + _nextIdAgent.ToString());
                 agentsList.Add(agent);
 
-                if (!MessageQueue.Exists(agent.QueueSend))
+                if (!MessageQueue.Exists(agent.QueueSendName))
                 {
-                    MessageQueue.Create(agent.QueueSend);
+                    MessageQueue.Create(agent.QueueSendName);
                 }
 
-                if (!MessageQueue.Exists(agent.QueueReceive))
+                if (!MessageQueue.Exists(agent.QueueReceiveName))
                 {
-                    MessageQueue.Create(agent.QueueReceive);
+                    MessageQueue.Create(agent.QueueReceiveName);
                 }
 
-                CreateQuereMessage messageSend = new CreateQuereMessage(_nextIdAgent, 0, agent.QueueSend, agent.QueueReceive);
+                CreateQuereMessage messageSend = new CreateQuereMessage(_nextIdAgent, 0, agent.QueueSendName, agent.QueueReceiveName);
                 ++_nextIdAgent;
                 quere.Send(messageSend);
 
-                quereList.Add(agent.QueueSend);
-                quereList.Add(agent.QueueReceive);
+                quereList.Add(agent.QueueSendName);
+                quereList.Add(agent.QueueReceiveName);
 
                 Thread threadAgent = new Thread(agent.WorkingAgent);
                 threadAgent.Start();
@@ -98,6 +99,12 @@ namespace ControlAplication
         {
             try
             {
+                for (int index=0; index < tasksList.Capacity; ++index ) {
+                    if (tasksList[index].IdTask == message.Task.IdTask && message.Task.Complete) {
+                        tasksList[index] = message.Task;
+                    }
+                }
+                Console.Write(message.Task.ReadyPassword);
             }
             catch (Exception e)
             {
@@ -123,10 +130,10 @@ namespace ControlAplication
                 {
                     if (item.IdAgent == idDelete)
                     {
-                        MessageQueue.Delete(item.QueueReceive);
-                        MessageQueue.Delete(item.QueueSend);
-                        quereList.Remove(item.QueueReceive);
-                        quereList.Remove(item.QueueSend);
+                        MessageQueue.Delete(item.QueueReceiveName);
+                        MessageQueue.Delete(item.QueueSendName);
+                        quereList.Remove(item.QueueReceiveName);
+                        quereList.Remove(item.QueueSendName);
                         agentsList.Remove(item);
                         dictionaryThread[item].Abort();
                         dictionaryThread.Remove(item);

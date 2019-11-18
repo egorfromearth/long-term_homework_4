@@ -8,8 +8,9 @@ namespace Agent
     {
               
         private static void SetInfo() {
+            PasswordGuessing temp = new PasswordGuessing();
             ProcessingMessage._info.CountCore = Environment.ProcessorCount;
-            ProcessingMessage._info.PasswordsPerSecond = 555; //надо как то узнать скорость подбора
+            ProcessingMessage._info.PasswordsPerSecond = temp.SpeedTest(); //надо как то узнать скорость подбора
         }
 
         static void Main(string[] args)
@@ -21,18 +22,13 @@ namespace Agent
 
             while (true) {
 
-                Communication.Message message = new Communication.Message(0, ProcessingMessage._idAgent);
-
-                ProcessingMessage._queueSend.Send(message);
-                Thread.Sleep(2000);
-
                 var messageRead = ProcessingMessage._queueReceive.Receive();
 
-                Communication.Message messageTwo = (Communication.Message)messageRead.Body;
+                Communication.Message message = (Communication.Message)messageRead.Body;
 
                 foreach (var item in ProcessingMessage._messageHandler)
                 {
-                    if (item.Key == messageTwo.TypeMessage)
+                    if (item.Key == message.TypeMessage)
                     {
                         item.Value.DynamicInvoke(message);
                     }
