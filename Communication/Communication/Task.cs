@@ -13,12 +13,20 @@ namespace Communication
         string _hash;
         int _idTask;
         bool _processing;
-        string readyPassword;
+        string _readyPassword;
+
+        public Task(string hash, int idTask) {
+             _complete = false;
+             _hash = hash;
+             _idTask = idTask;
+             _processing = false;
+             _readyPassword = null;
+        }
 
         public bool Complete { get => _complete; set => _complete = value; }
-        public string Hash { get => _hash; set => _hash = value; }
-        public int IdTask { get => _idTask; set => _idTask = value; }
+        public string Hash { get => _hash;}
+        public int IdTask { get => _idTask;}
         public bool Processing { get => _processing; set => _processing = value; }
-        public string ReadyPassword { get => readyPassword; set => readyPassword = value; }
+        public string ReadyPassword { get => _readyPassword; set => _readyPassword = value; }
     }
 }

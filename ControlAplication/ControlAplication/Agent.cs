@@ -21,11 +21,10 @@ namespace ControllAplication
         public MessageQueue QueueSend { get => _queueSend; }
         public MessageQueue QueueReceive { get => _queueReceive; }
 
-        SystemInformation Info { get => _info; }
+        public SystemInformation Info { get => _info; }
 
         public void WorkingAgent()
         {
-
             while (true)
             {
                 ProcessingMessage.ChekMessage(_queueSend);

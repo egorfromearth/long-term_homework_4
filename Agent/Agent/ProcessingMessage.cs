@@ -23,7 +23,7 @@ namespace Agent
             { "ExitMessage",   new ExitMessageHandler(ProcessingExitMessage) },
             { "TaskMessage",  new TaskMessageHandler(ProcessingTaskMessage) }
         };
-        
+
         delegate void MessageHandler(Communication.Message message);
         delegate void ExitMessageHandler(ExitMessage message);
         delegate void TaskMessageHandler(TaskMessage message);
@@ -42,34 +42,36 @@ namespace Agent
             _queueReceive.Close();
             _queueSend.Close();
             _mainQuere.Close();
-            
+
             Environment.Exit(0);
         }
 
-        public static void newThreadBruteForce(TaskMessage message) {
+        public static void newThreadBruteForce(TaskMessage message)
+        {
 
             PasswordGuessing passwordGuessing = new PasswordGuessing();
             passwordGuessing.Brute(message.Start, message.Stop, message.Task.Hash);
 
-            if (passwordGuessing.Psss == "")
+            if (passwordGuessing.Pass == "")
             {
                 TaskMessage messageSend = new TaskMessage(0, _idAgent, message.Task, message.Start, message.Stop);
                 _queueSend.Send(messageSend);
             }
-            else {
-                Task compliteTask = new Task();
+            else
+            {
+                Task compliteTask = new Task(message.Task.Hash, message.Task.IdTask);
                 compliteTask = message.Task;
-                compliteTask.ReadyPassword = passwordGuessing.Psss;
+                compliteTask.ReadyPassword = passwordGuessing.Pass;
                 compliteTask.Complete = true;
 
-                TaskMessage messageSend = new TaskMessage(0, _idAgent, message.Task, message.Start, message.Stop);
+                TaskMessage messageSend = new TaskMessage(0, _idAgent, compliteTask, message.Start, message.Stop);
                 _queueSend.Send(messageSend);
             }
         }
 
         public static void ProcessingTaskMessage(TaskMessage message)
         {
-            Console.WriteLine(message.TypeMessage);
+            Console.WriteLine(message.TypeMessage + "segment: " + message.Start + " - " + message.Stop + " Hash: " + message.Task.Hash);
             _tasks.Add(message.Task);
 
             Thread myThread = new Thread(delegate () { newThreadBruteForce(message); });

@@ -10,7 +10,7 @@ namespace ControlAplication
 
     public class ProcessingMessage
     {
-        private static List<Task> tasksList = new List<Task>();
+        public static List<Task> tasksList = new List<Task>();
         public static List<Agent> agentsList = new List<Agent>();
         public static List<string> quereList = new List<string>();
         public static Dictionary<Agent, Thread> dictionaryThread = new Dictionary<Agent, Thread>();
@@ -99,12 +99,18 @@ namespace ControlAplication
         {
             try
             {
-                for (int index=0; index < tasksList.Capacity; ++index ) {
-                    if (tasksList[index].IdTask == message.Task.IdTask && message.Task.Complete) {
+                Console.Write("TaskMessage idAgent: " + message.IdSender);
+                for (int index = 0; index < tasksList.Count; ++index)
+                {
+                    if (tasksList[index].IdTask == message.Task.IdTask && message.Task.Complete)
+                    {
                         tasksList[index] = message.Task;
                     }
                 }
-                Console.Write(message.Task.ReadyPassword);
+                if (message.Task.Complete)
+                {
+                    Console.Write("пароль к хешу " + message.Task.Hash +" подобран: " + message.Task.ReadyPassword);
+                }
             }
             catch (Exception e)
             {
@@ -159,7 +165,7 @@ namespace ControlAplication
         /// имя просматриваемй очереди
         /// </param>
         /// 
-        public static void ChekMessage(MessageQueue quere)
+        public static string ChekMessage(MessageQueue quere)
         {
             var objMessage = quere.Receive();
             Communication.Message messageRead = (Communication.Message)objMessage.Body;
@@ -169,8 +175,10 @@ namespace ControlAplication
                 if (item.Key == messageRead.TypeMessage)
                 {
                     item.Value.DynamicInvoke(quere, messageRead);
+                    return item.Key;
                 }
             }
-        }
+            return null;
+        } 
     }
 }

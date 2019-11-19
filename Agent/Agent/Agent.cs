@@ -6,8 +6,9 @@ namespace Agent
 
     class Agent
     {
-              
-        private static void SetInfo() {
+
+        private static void SetInfo()
+        {
             PasswordGuessing temp = new PasswordGuessing();
             ProcessingMessage._info.CountCore = Environment.ProcessorCount;
             ProcessingMessage._info.PasswordsPerSecond = temp.SpeedTest(); //надо как то узнать скорость подбора
@@ -16,11 +17,13 @@ namespace Agent
         static void Main(string[] args)
         {
             SetInfo();
-            if (!ProcessingMessage.Connecting()) {
+            if (!ProcessingMessage.Connecting())
+            {
                 Environment.Exit(1);
             }
 
-            while (true) {
+            while (true)
+            {
 
                 var messageRead = ProcessingMessage._queueReceive.Receive();
 
@@ -33,7 +36,7 @@ namespace Agent
                         item.Value.DynamicInvoke(message);
                     }
                 }
-            }                   
+            }
         }
     }
 }
