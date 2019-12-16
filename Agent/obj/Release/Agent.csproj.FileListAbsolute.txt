@@ -1,0 +1,8 @@
+E:\Dolgosrok\bin\Release\Agent.exe.config
+E:\Dolgosrok\bin\Release\Agent.exe
+E:\Dolgosrok\bin\Release\Agent.pdb
+E:\Dolgosrok\Agent\obj\Release\Agent.csprojAssemblyReference.cache
+E:\Dolgosrok\Agent\obj\Release\Agent.csproj.CoreCompileInputs.cache
+E:\Dolgosrok\Agent\obj\Release\Agent.csproj.CopyComplete
+E:\Dolgosrok\Agent\obj\Release\Agent.exe
+E:\Dolgosrok\Agent\obj\Release\Agent.pdb

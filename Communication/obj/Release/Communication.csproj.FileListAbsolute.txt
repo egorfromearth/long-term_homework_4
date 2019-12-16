@@ -1,0 +1,6 @@
+E:\Dolgosrok\bin\Release\Communication.dll
+E:\Dolgosrok\bin\Release\Communication.pdb
+E:\Dolgosrok\Communication\obj\Release\Communication.csproj.CoreCompileInputs.cache
+E:\Dolgosrok\Communication\obj\Release\Communication.dll
+E:\Dolgosrok\Communication\obj\Release\Communication.pdb
+E:\Dolgosrok\Communication\obj\Release\Communication.csprojAssemblyReference.cache
