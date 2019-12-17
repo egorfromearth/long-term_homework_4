@@ -60,32 +60,7 @@ namespace ControlApplication.Tests
             Assert.AreEqual(range[1], correctRange[1]);
         }
 
-        [TestMethod]
-        public void DistributionTestSecond()
-        {
-            List<Agent> listAgent = new List<Agent>();
-            Task task = new Task("YpAs3o52zp/pP1F65AlheA==", 0);
-            SystemInformation info = new SystemInformation();
-            info.CountCore = 4;
-            info.PasswordsPerSecond = 100000;
-            Agent agent = new Agent(0, info, "test", "test");
-            agent.Info.PasswordsPerSecond = 100000;
-
-            Agent agent2 = new Agent(0, info, "test2", "test2");
-
-            agent.Connect = true;
-            agent2.Connect = true;
-            listAgent.Add(agent);
-            listAgent.Add(agent2);
-            var messageArr = DistributionRanges.Distribution(listAgent, task);
-
-            string[] correctRange = { "A", "ЛЛЛИVZ" };
-            string[] range = { messageArr[0].Start, messageArr[0].Stop };
-
-            Assert.AreEqual(range[0], correctRange[0]);
-            Assert.AreEqual(range[1], correctRange[1]);
-        }
-
+      
         [TestMethod]
         public void DisconnectAgentHandlerExistAgent()
         {
@@ -120,6 +95,21 @@ namespace ControlApplication.Tests
             MessageQueue.Delete(@".\private$\DisconnectAgentHandlerTestSend");
             MessageQueue.Delete(@".\private$\DisconnectAgentHandlerTestReceive");
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         [TestMethod]
         public void DisconnectAgentHandlerNotExistAgent()

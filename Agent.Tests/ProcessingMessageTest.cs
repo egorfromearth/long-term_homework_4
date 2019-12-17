@@ -30,6 +30,27 @@ namespace Agent.Tests
             MessageQueue.Delete(@".\private$\ChekMessageMessageNotExist");
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         [TestMethod]
         public void ChekMessageTaskStopProcessingMessage()
         {

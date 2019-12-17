@@ -27,10 +27,10 @@ namespace Agent.Tests
         [TestMethod]
         public void BruteForceTestNormal()
         {
-            int len = 4;
-            string start = "ABCD";
-            string stop = "EEEE";
-            string hash = "XiUYNkNaF+bVhDyNvfaehw==";
+            int len = 3;
+            string start = "ABC";
+            string stop = "EEE";
+            string hash = "QkUdNwsYi8TtKjEr4L08SQ==";
             bool flag = false;
             flag = PasswordGuessing.BruteForce(len, start, stop, hash);
             Assert.IsTrue(flag);
@@ -56,7 +56,7 @@ namespace Agent.Tests
             int len = 3;
             string start = "ABC";
             string stop = "EEE";
-            string hash = "bWiQAOHWQr3k2UFmaELw8g==";
+            string hash = "B0UGSRi0lpPMpk1rahPSig==";
             bool flag = false;
             flag = PasswordGuessing.BruteForce(len, start, stop, hash);
             Assert.IsFalse(flag);

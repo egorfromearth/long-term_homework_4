@@ -12,3 +12,17 @@ E:\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.cspro
 E:\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.csproj.CopyComplete
 E:\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.dll
 E:\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\ControlApplication.Tests.dll
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\ControlApplication.Tests.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\Communication.dll
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\ControlApplication.exe
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\Communication.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\ControlApplication.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\ControlApplication.exe.config
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\bin\Release\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.csprojAssemblyReference.cache
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.csproj.CoreCompileInputs.cache
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.csproj.CopyComplete
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.dll
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication.Tests\obj\Release\ControlApplication.Tests.pdb
