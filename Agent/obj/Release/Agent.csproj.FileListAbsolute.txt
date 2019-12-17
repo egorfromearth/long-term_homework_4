@@ -1,0 +1,15 @@
+E:\Dolgosrok\bin\Release\Agent.exe.config
+E:\Dolgosrok\bin\Release\Agent.exe
+E:\Dolgosrok\bin\Release\Agent.pdb
+E:\Dolgosrok\Agent\obj\Release\Agent.csprojAssemblyReference.cache
+E:\Dolgosrok\Agent\obj\Release\Agent.csproj.CoreCompileInputs.cache
+E:\Dolgosrok\Agent\obj\Release\Agent.csproj.CopyComplete
+E:\Dolgosrok\Agent\obj\Release\Agent.exe
+E:\Dolgosrok\Agent\obj\Release\Agent.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\bin\Release\Agent.exe.config
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\bin\Release\Agent.exe
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\bin\Release\Agent.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\Agent\obj\Release\Agent.csproj.CoreCompileInputs.cache
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\Agent\obj\Release\Agent.csproj.CopyComplete
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\Agent\obj\Release\Agent.exe
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\Agent\obj\Release\Agent.pdb

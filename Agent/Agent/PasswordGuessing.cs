@@ -48,15 +48,11 @@ namespace Agent
         public int SpeedTest()
         {
             var timeStarted = DateTime.Now;
-            // Console.WriteLine("Start BruteForce - {0}", timeStarted.ToString());
             Brute("AAA", "BBB", "BBB");
-            // Console.WriteLine("Password matched. - {0}", DateTime.Now.ToString());
 
-            //Console.WriteLine("Time passed: {0}s", DateTime.Now.Subtract(timeStarted).TotalSeconds);
-
-            double speed_buf = ((124 * 124 + 124 + 1) / (DateTime.Now.Subtract(timeStarted).TotalSeconds));
+            double speed_buf = ((124 * 124 + 124  + 1) / (DateTime.Now.Subtract(timeStarted).TotalSeconds));
             int speed = (int)speed_buf;
-            Console.WriteLine(speed);
+            //Console.WriteLine(speed);
             return speed;
 
         }

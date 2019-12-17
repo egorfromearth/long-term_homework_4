@@ -1,0 +1,15 @@
+E:\Dolgosrok\bin\Release\ControlApplication.exe.config
+E:\Dolgosrok\bin\Release\ControlApplication.exe
+E:\Dolgosrok\bin\Release\ControlApplication.pdb
+E:\Dolgosrok\ControlApplication\obj\Release\ControlApplication.csprojAssemblyReference.cache
+E:\Dolgosrok\ControlApplication\obj\Release\ControlApplication.csproj.CoreCompileInputs.cache
+E:\Dolgosrok\ControlApplication\obj\Release\ControlApplication.csproj.CopyComplete
+E:\Dolgosrok\ControlApplication\obj\Release\ControlApplication.exe
+E:\Dolgosrok\ControlApplication\obj\Release\ControlApplication.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\bin\Release\ControlApplication.exe.config
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\bin\Release\ControlApplication.exe
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\bin\Release\ControlApplication.pdb
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication\obj\Release\ControlApplication.csproj.CoreCompileInputs.cache
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication\obj\Release\ControlApplication.csproj.CopyComplete
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication\obj\Release\ControlApplication.exe
+C:\Users\fsoc\Desktop\Shubin\Dolgosrok\ControlApplication\obj\Release\ControlApplication.pdb

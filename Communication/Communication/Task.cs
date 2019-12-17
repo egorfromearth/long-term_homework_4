@@ -9,21 +9,20 @@ namespace Communication
     [Serializable]
     public class Task
     {
-        bool _complete;
         string _hash;
         int _idTask;
         bool _processing;
         string _readyPassword;
 
         public Task(string hash, int idTask) {
-             _complete = false;
+             Complete = false;
              _hash = hash;
              _idTask = idTask;
              _processing = false;
              _readyPassword = null;
         }
 
-        public bool Complete { get => _complete; set => _complete = value; }
+        public bool Complete { get; set; }
         public string Hash { get => _hash;}
         public int IdTask { get => _idTask;}
         public bool Processing { get => _processing; set => _processing = value; }

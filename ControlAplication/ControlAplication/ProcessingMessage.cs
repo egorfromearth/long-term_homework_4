@@ -57,7 +57,7 @@ namespace ControlAplication
         {
             try
             {
-                Agent agent = new Agent(_nextIdAgent, -1, message.info, @".\private$\secondSend" + _nextIdAgent.ToString(), @".\private$\secondRecive" + _nextIdAgent.ToString());
+                Agent agent = new Agent(_nextIdAgent, -1, message.info, @"LENOVO-PC\private$\secondSend" + _nextIdAgent.ToString(), @"LENOVO-PC\private$\secondRecive" + _nextIdAgent.ToString());
                 agentsList.Add(agent);
 
                 if (!MessageQueue.Exists(agent.QueueSendName))
@@ -109,7 +109,7 @@ namespace ControlAplication
                 }
                 if (message.Task.Complete)
                 {
-                    Console.Write("пароль к хешу " + message.Task.Hash +" подобран: " + message.Task.ReadyPassword);
+                    Console.WriteLine("пароль к хешу " + message.Task.Hash +" подобран: " + message.Task.ReadyPassword);
                 }
             }
             catch (Exception e)
